@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Book Appointment"
+        android:textColor="@color/skyBlue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/popUpImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="60dp"
+        android:elevation="4dp"
+        app:srcCompat="@drawable/popupimage" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/chooseSpec"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/popUpImage"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingStart="30dp"
+        android:paddingEnd="15sp"
+        android:text="Choose Specialization"
+        android:textColor="@color/skyBlue" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/chooseHosp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/chooseSpec"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingStart="30dp"
+        android:paddingEnd="15sp"
+        android:text="Choose Hospital"
+        android:textColor="@color/skyBlue" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/chooseLocation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/chooseHosp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingStart="30dp"
+        android:paddingEnd="15sp"
+        android:text="Choose Location"
+        android:textColor="@color/skyBlue" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/chooseDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/chooseLocation"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingStart="30dp"
+        android:paddingEnd="15sp"
+        android:text="Choose Dr."
+        android:textColor="@color/skyBlue" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/chooseByHospital"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/chooseDoctor"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingStart="30dp"
+        android:paddingEnd="15sp"
+        android:text="Choose By Hospital"
+        android:textColor="@color/skyBlue" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/chooseDrByRating"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/chooseByHospital"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:drawableEnd="@drawable/arrow_right"
+        android:fontFamily="@font/poppins"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingStart="30dp"
+        android:paddingEnd="15sp"
+        android:text="Choose DR. By Rating"
+        android:textColor="@color/skyBlue" />
+
+
+</RelativeLayout>

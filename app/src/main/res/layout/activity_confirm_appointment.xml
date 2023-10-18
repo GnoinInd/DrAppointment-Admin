@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmAppointmentActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backButton"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="26dp"
+                android:background="?selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/arrow_back" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/backButton"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Confirm Appoinment"
+                android:textColor="@color/skyBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="15dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="1dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/box3"
+                        android:fontFamily="@font/poppins"
+                        android:foreground="?selectableItemBackground"
+                        android:includeFontPadding="false"
+                        android:padding="5dp"
+                        android:text="Change "
+                        android:textAllCaps="false"
+                        android:textColor="@color/skyBlue"
+                        android:textSize="11sp" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/subCard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/change"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="55dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/skyBlue"
+                        android:paddingHorizontal="13dp"
+                        android:paddingVertical="10dp"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/calendar" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:text="Appointment Date"
+                        android:textColor="@color/skyBlue"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:text="August 4, 2023"
+                        android:textColor="#777777"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/subCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/subCard1"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="55dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/skyBlue"
+                        android:paddingHorizontal="13dp"
+                        android:paddingVertical="10dp"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/access_time" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:text="Appointment Time"
+                        android:textColor="@color/skyBlue"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:text="8:45 - 9:00"
+                        android:textColor="#777777"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/subCard2"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#E1E1E1" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/doctorImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/a0" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/doctorName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/doctorImage"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Dr. John Wilson"
+                        android:textColor="@color/skyBlue"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/doctorImage"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="MBBS; MD; DGO OBS &amp; GYN; Trained In Endoscopic Surgery"
+                        android:textColor="#777777"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <!--<androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/specIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:paddingBottom="4dp"
+
+                        android:layout_toEndOf="@id/doctorImage"
+                        app:srcCompat="@drawable/speciality" />-->
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/spec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_toEndOf="@id/doctorImage"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="Orthopedics"
+                        android:textColor="#777777"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/speciality" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/rl1"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#E1E1E1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line2"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/locationImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/ellipse" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/locationImage"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Dishant Health city, Jubilee."
+                        android:textColor="@color/skyBlue"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/subLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@id/locationImage"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="Dishant Cradle Jubileehills"
+                        android:textColor="#777777"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <!--<androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/locationIcon"
+                        android:layout_width="14dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="23dp"
+                        android:paddingBottom="5dp"
+
+                        android:layout_toEndOf="@id/locationImage"
+                        app:srcCompat="@drawable/location" />-->
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/getDirection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/locationImage"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toEndOf="@id/locationImage"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingStart="5dp"
+                        android:text="Get Direction"
+                        android:textColor="#777777"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/location" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/genderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Booking For :"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/genderText"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Self"
+                        android:textColor="@drawable/text_color"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@android:color/transparent"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Relative"
+                        android:textColor="@drawable/text_color"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/uhidText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radioGroup"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="UHID’s Linked to your mobile no :"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/uhid"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/uhidText"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/box3"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="15sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uhid"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Any change in UHID can be done at hospital/clinic."
+                    android:textColor="#777777"
+                    android:textSize="10sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/myDetailsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uhid"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="My Details"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/firstNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myDetailsText"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="First Name  : "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/firstName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myDetailsText"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/firstNameText"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Alpha"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstName"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Last Name  : "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/lastName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/firstName"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/firstNameText"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Beta"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lastName"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Mobile No    : "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mobileNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lastName"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/firstNameText"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="8967543304"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mobileNo"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Email             : "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mobileNo"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/firstNameText"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="alpha123@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Dob                : "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/firstNameText"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="12/02/2001"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dob"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Gender         : "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dob"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/firstNameText"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Male"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:text="I agree to the Terms and Conditions"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirmAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/box"
+            android:elevation="30dp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:text="Confirm Appointment"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>

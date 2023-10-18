@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "73380528353",
+    "project_id": "appointment-fa390",
+    "storage_bucket": "appointment-fa390.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73380528353:android:60cb2c4f074ef347b837a0",
+        "android_client_info": {
+          "package_name": "com.example.appointment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73380528353-cvqd0aihnku59ta6lommk0aoj871s8bm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appointment",
+            "certificate_hash": "ca235bbec29fe662cb6ba4426587e2e8e481197a"
+          }
+        },
+        {
+          "client_id": "73380528353-ufpihmee0mp4qc8qg00jpppgliim5ce7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyem-yeVHk3CqTFJ0bkFhFrZ88tavxsQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "73380528353-ufpihmee0mp4qc8qg00jpppgliim5ce7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

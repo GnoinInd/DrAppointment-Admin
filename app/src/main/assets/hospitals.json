@@ -1,0 +1,651 @@
+{
+  "hospitals": [
+    {
+      "hospital_name": "Apollo Hospital",
+      "hospital_address": {
+        "street": "789 Garden Lane",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "zip_code": "560001"
+      },
+      "specialization": [
+        "Pediatrics",
+        "Pathology",
+        "Neurology",
+        "gynaecology",
+        "Dermatology",
+        "Otorhinolaryngology",
+        "Anesthesiology",
+        "Psychiatry",
+        "Gastroenterology",
+        "Cardiology",
+        "Internal Medicine",
+        "Oncology"
+      ],
+      "doctor_list": [
+        {
+          "doctor_name": "Dr. Alpha",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Pediatrics",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Beta",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Pediatrics",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Raj",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Pathology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Gama",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Pathology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu, Sat"
+        },
+        {
+          "doctor_name": "Dr. Usman Shah",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "gynaecology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed"
+        },
+        {
+          "doctor_name": "Dr. Hina Khan",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Dermatology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Mahmood",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Psychiatry",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Malik",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Otorhinolaryngology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Qureshi",
+          "doctor_degree": "M.Phil.",
+          "doctor_specialization": "Neurology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Abbas",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Oncology",
+          "gender": "Male",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Khurram",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Anesthesiology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Khan",
+          "doctor_degree": "D.O.",
+          "doctor_specialization": "Cardiology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Kamran",
+          "doctor_degree": "Ph.D.",
+          "doctor_specialization": "Psychiatry",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr.Qazi",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Radiology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Siddique",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Gastroenterology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Nariz",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Internal Medicine",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Riaz",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Dermatology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Alfred",
+          "doctor_degree": "Ph.D.",
+          "doctor_specialization": "Psychiatry",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Pogo",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Internal Medicine",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        }
+      ],
+      "category_type": "expensive"
+    },
+    {
+      "hospital_name": "City Hospital",
+      "hospital_address": {
+        "street": "123 Main Street",
+        "city": "Jama Masjid",
+        "state": "Delhi",
+        "zip_code": "12345"
+      },
+      "specialization": [
+        "Orthopedics",
+        "Pediatrics",
+        "Neurology",
+        "Dermatology",
+        "Ophthalmology",
+        "Otorhinolaryngology",
+        "Anesthesiology",
+        "Psychiatry",
+        "Radiology",
+        "Gastroenterology",
+        "Cardiology",
+        "ENT",
+        "Oncology"
+      ],
+      "doctor_list": [
+        {
+          "doctor_name": "Dr. John Smith",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Orthopedics",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Emily Johnson",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Pediatrics",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Lisa Davis",
+          "doctor_degree": "M.Phil.",
+          "doctor_specialization": "Neurology",
+          "gender": "Female",
+          "doctor_availability": "Mon, Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Michael Brown",
+          "doctor_degree": "D.O.",
+          "doctor_specialization": "Dermatology",
+          "gender": "Male",
+          "doctor_availability": "Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Sarah White",
+          "doctor_degree": "Ph.D.",
+          "doctor_specialization": "Dermatology",
+          "gender": "Female",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Maria Garcia",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Ophthalmology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu, Sat"
+        },
+        {
+          "doctor_name": "Dr. James Wilson",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Otorhinolaryngology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed"
+        },
+        {
+          "doctor_name": "Dr. Susan Patel",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Anesthesiology",
+          "gender": "Male",
+          "doctor_availability": "Tue, Thu, Sat"
+        },
+        {
+          "doctor_name": "Dr. Robert Johnson",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Psychiatry",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Jennifer Lee",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Radiology",
+          "gender": "Male",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Kevin Brown",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Gastroenterology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Laura Miller",
+          "doctor_degree": "D.O.",
+          "doctor_specialization": "Cardiology",
+          "gender": "Female",
+          "doctor_availability": "Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Thomas Clark",
+          "doctor_degree": "Ph.D.",
+          "doctor_specialization": "Ophthalmology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Jessica Taylor",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "ENT",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu, Sat"
+        },
+        {
+          "doctor_name": "Dr. David Martinez",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Oncology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed"
+        },
+        {
+          "doctor_name": "Dr. Michelle Adams",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Neurology",
+          "gender": "Male",
+          "doctor_availability": "Tue, Thu, Sat"
+        },
+        {
+          "doctor_name": "Dr. John Brown",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Pediatrics",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Samantha Davis",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Oncology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Daniel White",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Cardiology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Emily Johnson",
+          "doctor_degree": "M.Phil.",
+          "doctor_specialization": "Orthopedics",
+          "gender": "Female",
+          "doctor_availability": "Wed, Fri"
+        }
+      ],
+      "category_type": "medium"
+    },
+    {
+      "hospital_name": "Greenway Hospital",
+      "hospital_address": {
+        "street": "789 Garden Lane",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "zip_code": "560001"
+      },
+      "specialization": [
+        "Orthopedics",
+        "Pathology",
+        "Neurology",
+        "Obstetrics",
+        "Dermatology",
+        "Pediatrics",
+        "Ophthalmology",
+        "Anesthesiology",
+        "Psychiatry",
+        "Radiology",
+        "Gastroenterology",
+        "Cardiology",
+        "Internal Medicine",
+        "ENT"
+      ],
+      "doctor_list": [
+        {
+          "doctor_name": "Dr. Anand Reddy",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Orthopedics",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Priya Rao",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Pathology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Rajesh Sharma",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Obstetrics",
+          "gender": "Male",
+          "doctor_availability": "Mon, Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Amina Malik",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Cardiology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu, Sat"
+        },
+        {
+          "doctor_name": "Dr. Usman Shah",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Orthopedics",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed"
+        },
+        {
+          "doctor_name": "Dr. Hina Khan",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Neurology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Yasir Mahmood",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Cardiology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Sadia Malik",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Pediatrics",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Saad Qureshi",
+          "doctor_degree": "M.Phil.",
+          "doctor_specialization": "Dermatology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Sara Abbas",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Ophthalmology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Khurram Ahmed",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Neurology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Fatima Khan",
+          "doctor_degree": "D.O.",
+          "doctor_specialization": "Anesthesiology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Kamran Ali",
+          "doctor_degree": "Ph.D.",
+          "doctor_specialization": "Psychiatry",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Saima Qazi",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Radiology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Ali Khan",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Gastroenterology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Nida Ahmed",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Internal Medicine",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Imran Riaz",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Dermatology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Ayesha Khan",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "ENT",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Alpha",
+          "doctor_degree": "Ph.D.",
+          "doctor_specialization": "Psychiatry",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Shabbir Ahmad",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Internal Medicine",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        }
+      ],
+      "category_type": "under budget"
+    },
+    {
+      "hospital_name": "Tata Hospital",
+      "hospital_address": {
+        "street": "456 Park Road",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "zip_code": "110001"
+      },
+      "specialization": [
+        "Pediatrics",
+        "Neurology",
+        "Dermatology",
+        "Pediatrics",
+        "Ophthalmology",
+        "Otorhinolaryngology",
+        "Anesthesiology",
+        "Psychiatry",
+        "Radiology",
+        "Gastroenterology",
+        "Cardiology",
+        "Internal Medicine",
+        "Oncology"
+      ],
+      "doctor_list": [
+        {
+          "doctor_name": "Dr. Priya Sharma",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Otorhinolaryngology",
+          "gender": "Female",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Vikram Singh",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Pediatrics",
+          "gender": "Male",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Ali Khan",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Neurology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Ayesha Ahmed",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Oncology",
+          "gender": "Female",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Imran Hassan",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Dermatology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Sana Iqbal",
+          "doctor_degree": "D.O.",
+          "doctor_specialization": "Ophthalmology",
+          "gender": "Female",
+          "doctor_availability": "Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Farhan Riaz",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Otorhinolaryngology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Ramesh Gupta",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Anesthesiology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Sachin Sharma",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Psychiatry",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Virat Patel",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Radiology",
+          "gender": "Male",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Rohit Singh",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Gastroenterology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Anushka Kumar",
+          "doctor_degree": "D.O.",
+          "doctor_specialization": "Cardiology",
+          "gender": "Female",
+          "doctor_availability": "Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Dhoni Sharma",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Oncology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Shikhar Verma",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Internal Medicine",
+          "gender": "Male",
+          "doctor_availability": "Tue, Thu, Sat"
+        },
+        {
+          "doctor_name": "Dr. Jadeja Kumar",
+          "doctor_degree": "M.B.B.S.",
+          "doctor_specialization": "Gastroenterology",
+          "gender": "Male",
+          "doctor_availability": "Mon, Wed"
+        },
+        {
+          "doctor_name": "Dr. Yuvraj Sharma",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Ophthalmology",
+          "gender": "Male",
+          "doctor_availability": "Tue, Thu"
+        },
+        {
+          "doctor_name": "Dr. Raina Singh",
+          "doctor_degree": "M.D.",
+          "doctor_specialization": "Pediatrics",
+          "gender": "Female",
+          "doctor_availability": "Wed, Fri"
+        },
+        {
+          "doctor_name": "Dr. Dravid Kumar",
+          "doctor_degree": "Ph.D.",
+          "doctor_specialization": "Oncology",
+          "gender": "Male",
+          "doctor_availability": "Sun, Fri"
+        }
+      ],
+      "category_type": "cheap"
+    }
+  ]
+}

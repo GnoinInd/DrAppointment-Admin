@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backButton"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/arrow_back" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/backButton"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Payment Details"
+        android:textColor="@color/skyBlue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp"
+        app:srcCompat="@drawable/payment_image" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/amountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Amount To Pay :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/amountText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:paddingStart="12dp"
+        android:drawableStart="@drawable/currency_rupee"
+        android:paddingEnd="12dp"
+        android:drawablePadding="10dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cardNoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Card Number :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cardNo"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/cardNoText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:maxLength="16"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/expiryDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Expiry Date(MMYY) :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/expiryDate"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/expiryDateText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cvvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNo"
+        android:layout_alignStart="@id/cvv"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="CVV :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cvv"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/cvvText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:maxLength="3"
+        android:inputType="number"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirmPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cvv"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/box"
+        android:elevation="30dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Confirm Payment"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <!--<com.google.android.material.textview.MaterialTextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbarLayout"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/box3"
+        android:paddingHorizontal="20dp"
+        android:text="Rs. 1500"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amount"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Card Number : "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cardNo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/amount"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/box3"
+        android:hint="Enter Card Number*"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:textColorHint="#7A7878"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/expText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Expiry Date(MM/YY) : "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNo"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/expText"
+        android:text="CVV No: "
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/expiryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/expText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/box3"
+        android:hint="Enter Expiry Date*"
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="#7A7878"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/cvvNo"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/expText"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/expiryDate"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/box3"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingHorizontal="15dp"
+        android:textColorHint="#7A7878"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expiryDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg3"
+        android:text="Confirm Payment"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+-->
+
+</RelativeLayout>

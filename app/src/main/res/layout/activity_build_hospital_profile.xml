@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hospital_perspective.BuildHospitalProfileActivity">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Build Your Hospital Profile"
+        android:textColor="@color/skyBlue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/subCard1"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_below="@id/textView"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="47dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/play_image1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/play_icon" />
+
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/play_image2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:src="@drawable/play_icon"
+                    android:tint="#BEB5B5" />
+
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/play_image3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:src="@drawable/play_icon"
+                    android:tint="#BEB5B5" />
+
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:background="?android:attr/listDivider" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/play_image4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:src="@drawable/circle_icon"
+                    android:layout_marginEnd="40dp"
+                    android:tint="#BEB5B5" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll1"
+                android:layout_height="47dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/play_image2"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="start"
+                    android:layout_marginStart="40dp"
+                    android:includeFontPadding="false"
+                    android:text="Build\nProfile"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/play_image2"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Hospital    \nDetails     "
+                    android:textColor="#585858"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/play_image2"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Add\nSpecialist"
+                    android:textColor="#585858"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/play_image2"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="end"
+                    android:layout_marginEnd="40dp"
+                    android:includeFontPadding="false"
+                    android:text="Add\nDoctor"
+                    android:textColor="#585858"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!--<com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/play_image1"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Build\nProfile"
+                android:textColor="@color/skyBlue"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/play_image2"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="23dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/play_image1"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Hospital\nDetails"
+                android:textColor="@color/skyBlue"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/play_image3"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@id/play_image4"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Add\nSpecialist"
+                android:textColor="@color/skyBlue"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/play_image4"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Add\nDoctor"
+                android:textColor="@color/skyBlue"
+                android:textSize="12sp"
+                android:textStyle="bold" />-->
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subCard1"
+        android:layout_marginTop="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Hospital Name"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t1"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hospitalName"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Hospital Location"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hospitalLocation"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t2"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hospitalLocation"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="City"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t3"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Hospital Area"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hospitalArea"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t4"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="12dp"
+                android:inputType="textPersonName"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hospitalArea"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Address line 1"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addressLine1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t5"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:inputType="textPostalAddress"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressLine1"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Pin Code"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pinCode"
+                android:layout_width="135dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/t6"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressLine1"
+                android:layout_alignStart="@id/phoneNo"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Phone No."
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNo"
+                android:layout_width="135dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/t7"
+                android:layout_alignEnd="@id/addressLine1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:maxLength="10"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pinCode"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Helpline No"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/helpLineNo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t8"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:inputType="phone"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/helpLineNo"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Email ID"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailID"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t9"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="12dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailID"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Fax No."
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/faxNo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t10"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:inputType="phone"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faxNo"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Password"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t11"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:inputType="textPassword"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/t12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Re-Enter Password"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reEnterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/t12"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/box"
+                android:fontFamily="@font/poppins"
+                android:inputType="textPassword"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="12dp"
+                android:textColor="@color/skyBlue"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registerHospital"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/reEnterPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/box"
+                android:elevation="30dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Register Hospital"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

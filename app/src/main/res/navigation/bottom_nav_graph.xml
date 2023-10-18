@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.appointment.bottom_fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/newFragment"
+        android:name="com.example.appointment.bottom_fragments.NewFragment"
+        android:label="fragment_new"
+        tools:layout="@layout/fragment_new" />
+    <fragment
+        android:id="@+id/ongoingFragment"
+        android:name="com.example.appointment.bottom_fragments.OngoingFragment"
+        android:label="fragment_ongoing"
+        tools:layout="@layout/fragment_ongoing" />
+    <fragment
+        android:id="@+id/targetFragment"
+        android:name="com.example.appointment.bottom_fragments.TargetFragment"
+        android:label="fragment_target"
+        tools:layout="@layout/fragment_target" />
+    <fragment
+        android:id="@+id/moneyFragment"
+        android:name="com.example.appointment.bottom_fragments.MoneyFragment"
+        android:label="fragment_money"
+        tools:layout="@layout/fragment_money" />
+</navigation>

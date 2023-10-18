@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/timeMenu"
+        android:icon="@drawable/compass_icon"
+        app:showAsAction="ifRoom"
+        android:title="Time" />
+
+    <item
+        android:id="@+id/notificationMenu"
+        android:icon="@drawable/bell_icon"
+        app:showAsAction="ifRoom"
+        android:title="Notification" />
+
+    <item android:id="@+id/profileImageMenu"
+        app:actionLayout="@layout/profile_menu_item"
+        app:showAsAction="always"
+        android:title="Profile Image" />
+</menu>

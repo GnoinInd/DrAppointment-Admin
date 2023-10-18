@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backButton"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        app:srcCompat="@drawable/arrow_back"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="20dp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/backButton"
+        android:fontFamily="@font/poppins"
+        android:text="Select Category"
+        android:includeFontPadding="false"
+        android:textColor="@color/skyBlue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/rank1"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="8dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="1st Rank - Expensive"
+            android:textColor="@drawable/text_color"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rank2"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="12dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="2nd Rank - Medium"
+            android:textColor="@drawable/text_color"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rank3"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="8dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="3rd Rank - Under Budget"
+            android:textColor="@drawable/text_color"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rank4"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="8dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="4th Rank - Cheap"
+            android:textColor="@drawable/text_color"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="90dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Next"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

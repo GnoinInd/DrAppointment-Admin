@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="?selectableItemBackground"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginBottom="15dp"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a0" />
+
+            <View
+                android:layout_width="25dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/skyBlue"
+                android:layout_below="@id/image" />
+
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@id/image"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:gravity="center_horizontal"
+                android:text="Dr. Alpha"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@color/skyBlue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/doctorName"
+                android:background="@color/skyBlue"
+                android:layout_below="@id/image" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/timeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/access_time"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/image" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/day_Availability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                android:includeFontPadding="false"
+                android:text="Mon, Tue, Wed, Thur"
+                android:layout_toEndOf="@id/timeIcon"
+                android:textStyle="bold"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/time_availabilty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="12sp"
+                android:text="8:30 AM-11:30 AM\n1:30 PM-8:30 PM"
+                android:layout_toEndOf="@id/timeIcon"
+                android:layout_below="@id/day_Availability"
+                android:layout_marginEnd="20dp"
+                android:lineSpacingExtra="3dp"
+                android:includeFontPadding="false"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E1E1E1"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/image"
+                android:layout_below="@id/time_availabilty"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/location"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/line"
+            android:layout_toEndOf="@id/image" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/locationIcon"
+            android:layout_below="@id/line"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:text="Dishant Health city, Jubilee Hills, Dishant Cradle Jubileehills" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualification : "
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/doctorName"
+            android:includeFontPadding="false" />
+
+
+
+        <TextView
+            android:id="@+id/degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/image"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:layout_below="@id/doctorName"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:text="MBBS; MD; DGO OBS &amp; GYN; Trained In Endoscopic Surgery And Robotics" />
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1"
+            android:layout_below="@id/degree"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speciality        : "
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/line1"
+            android:includeFontPadding="false" />
+
+
+
+        <TextView
+            android:id="@+id/spec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/image"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:layout_below="@id/line1"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Orthopedics" />
+
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1"
+            android:layout_below="@id/spec"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience     : "
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/line2"
+            android:includeFontPadding="false" />
+
+
+
+        <TextView
+            android:id="@+id/experienceInYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/image"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:layout_below="@id/line2"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:text="22 Years" />
+
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1"
+            android:layout_below="@id/experienceInYears"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp" />
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language       : "
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/line3"
+            android:includeFontPadding="false" />
+
+
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/image"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:includeFontPadding="false"
+            android:layout_below="@id/line3"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:text="English, Hindi" />
+
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1"
+            android:layout_below="@id/language"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services          : "
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/line4"
+            android:includeFontPadding="false" />
+
+
+
+        <TextView
+            android:id="@+id/services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/image"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/skyBlue"
+            android:includeFontPadding="false"
+            android:layout_below="@id/line4"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="5dp"
+            android:text="Medical Fracture" />
+
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1"
+            android:layout_below="@id/services"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bookAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Appointment"
+            app:cornerRadius="8dp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:backgroundTint="@color/skyBlue"
+            android:layout_below="@id/line5"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="10dp"
+            android:layout_marginBottom="10dp" />
+
+
+<!--
+
+
+            <TextView
+                android:id="@+id/spec1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/image"
+                android:fontFamily="sans-serif-medium"
+                android:text="Orthopedics"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@id/image"
+                android:fontFamily="sans-serif-medium"
+                android:text="Male"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/availabilty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender"
+                android:layout_alignParentEnd="true"
+                android:gravity="end"
+                android:layout_marginEnd="50dp"
+                android:layout_toEndOf="@id/image"
+                android:layout_marginBottom="12dp"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="sans-serif-light"
+                android:text="Available in first meeting"
+                android:textSize="12sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dp"
+            android:background="#DCC9C9"/>
+-->
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

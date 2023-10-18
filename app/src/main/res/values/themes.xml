@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Appointment" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/upperBlue</item>
+        <item name="colorAccent">@color/skyBlue</item>
+        <item name="android:datePickerStyle">@style/datePicker</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Theme.Appointment" parent="Base.Theme.Appointment" />
+
+    <style name="datePicker" parent="android:Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">calendar</item>
+    </style>
+
+    <style name="menuItemTheme" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+</resources>

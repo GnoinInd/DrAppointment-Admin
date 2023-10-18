@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".bottom_fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subCard1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#934CEA"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="10dp"
+                app:srcCompat="@drawable/home_image" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Good Evening, Owner!"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@id/subCard2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/subCard1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:cardElevation="10dp">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="5dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Notification"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/green_box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:text="12"
+                android:textColor="#31A414"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subCard3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/subCard1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@id/subCard4"
+            android:layout_toEndOf="@id/subCard2"
+            app:cardElevation="10dp">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="5dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Wed, Aug 22"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/green_box"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:text="working"
+                android:textColor="#31A414"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subCard4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/subCard1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            app:cardElevation="10dp">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="10dp"
+                app:srcCompat="@drawable/home_image2" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subCard5"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/subCard2"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:cardBackgroundColor="#CBFFE0"
+            app:cardElevation="5dp">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="5dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#29CC6A"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="No New Jobs"
+                android:textColor="#29CC6A"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/arrow_forward" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subCard6"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/subCard2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            app:cardBackgroundColor="#C9F2FF"
+            app:cardElevation="5dp">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="5dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="#33BBE5"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="No Jobs Today"
+                android:textColor="#33BBE5"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:drawableEndCompat="@drawable/arrow_forward" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subCard6"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:layout_marginStart="15dp"
+            android:text="3 Pending Tasks"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subCard7"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/subCard6"
+            android:layout_marginTop="55dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardBackgroundColor="#FFE7E7"
+            app:cardElevation="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:background="#FD6969"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/home_image3" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Complete suraksha test to accept &amp; deliver jobs"
+                android:textColor="#E82323"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subCard8"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/subCard7"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#FFE7E7"
+            app:cardElevation="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:background="#FD6969"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/home_image4" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="10 Subscription jobs. 32 days left Buy job pack now."
+                android:textColor="#E82323"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/subCard9"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/subCard8"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardBackgroundColor="#FFE7E7"
+            app:cardElevation="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:background="#FD6969"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/home_image5" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Complete all pending trainings"
+                android:textColor="#E82323"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subCard9"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:text="1 Unread Update"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/subCard9"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/arrow_forward" />
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/subCard10"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="15dp"
+                android:layout_below="@id/subCard9"
+                android:layout_marginTop="80dp"
+                app:cardBackgroundColor="#CCDFFD">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="WHS Referral Program"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Referrals - 3 hours ago"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_alignBottom="@id/subCard10"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/home_image6" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subCard10"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:includeFontPadding="false"
+            android:layout_marginStart="15dp"
+            android:text="More From Glofaa"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DoctorShowMoreActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backButton"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="26dp"
+                android:background="?selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/arrow_back" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/backButton"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="Book Timing Slot"
+                android:textColor="@color/skyBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a0" />
+
+                <View
+                    android:layout_width="25dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/image"
+                    android:layout_marginTop="28dp"
+                    android:background="@color/skyBlue" />
+
+
+                <TextView
+                    android:id="@+id/doctorName"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="18dp"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="Dr. Alpha"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/image"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_toEndOf="@id/doctorName"
+                    android:background="@color/skyBlue" />
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/timeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/image"
+                    app:srcCompat="@drawable/access_time" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/day_Availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/timeIcon"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Mon, Tue, Wed, Thur"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/time_availabilty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/day_Availability"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/timeIcon"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3dp"
+                    android:text="8:30 AM-11:30 AM\n1:30 PM-8:30 PM"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/time_availabilty"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/image"
+                    android:background="#E1E1E1" />
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/locationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/image"
+                    app:srcCompat="@drawable/location" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/locationIcon"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3dp"
+                    android:maxLines="2"
+                    android:text="Dishant Health city, Jubilee Hills, Dishant Cradle Jubileehills"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doctorName"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Qualification : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doctorName"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/image"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3dp"
+                    android:text="MBBS; MD; DGO OBS &amp; GYN; Trained In Endoscopic Surgery And Robotics"
+                    android:textColor="@color/black" />
+
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/degree"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#E1E1E1" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Speciality        : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/image"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3dp"
+                    android:text="Orthopedics"
+                    android:textColor="@color/black" />
+
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/spec"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#E1E1E1" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Experience     : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/experienceInYears"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line2"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/image"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3dp"
+                    android:text="22 Years"
+                    android:textColor="@color/black" />
+
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/experienceInYears"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#E1E1E1" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line3"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Language       : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line3"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/image"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3dp"
+                    android:text="English, Hindi"
+                    android:textColor="@color/black" />
+
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/language"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#E1E1E1" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line4"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Services          : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line4"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/image"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="3dp"
+                    android:text="Medical Fracture"
+                    android:textColor="@color/skyBlue" />
+
+
+                <View
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/services"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#E1E1E1" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/bookAppointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/skyBlue"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="Book Appointment"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/showMoreButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/poppins"
+                    android:includeFontPadding="false"
+                    android:text="@string/show_more"
+                    android:textColor="@color/skyBlue"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <!--
+
+
+
+
+                            <TextView
+                                android:id="@+id/spec1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_toEndOf="@id/image"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Orthopedics"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="50dp"
+                                android:gravity="end"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+
+
+                            <TextView
+                                android:id="@+id/gender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_toEndOf="@id/image"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Male"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+
+
+
+
+                            <TextView
+                                android:id="@+id/availabilty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/gender"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="end"
+                                android:layout_marginEnd="50dp"
+                                android:layout_toEndOf="@id/image"
+                                android:layout_marginBottom="12dp"
+                                android:layout_alignParentBottom="true"
+                                android:fontFamily="sans-serif-light"
+                                android:text="Available in first meeting"
+                                android:textSize="12sp" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_height="1dp"
+                            android:background="#DCC9C9"/>
+                -->
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            app:cardCornerRadius="15dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="1dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/box3"
+                        android:fontFamily="@font/poppins"
+                        android:foreground="?selectableItemBackground"
+                        android:includeFontPadding="false"
+                        android:padding="5dp"
+                        android:text="Close "
+                        android:textAllCaps="false"
+                        android:textColor="@color/skyBlue"
+                        android:textSize="11sp"
+                        app:drawableStartCompat="@drawable/close" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/selectHospText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/close"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Selected Hospital : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/selectedHosp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/close"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@id/selectHospText"
+                    android:backgroundTint="@color/white"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins"
+                    android:foreground="@drawable/box3"
+                    android:gravity="center_horizontal"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="Apollo Hospital"
+                    android:textAllCaps="false"
+                    android:textColor="@color/skyBlue" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/selectedHosp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/poppins"
+                    android:text="Select Time slot to Book An Appointment"
+                    android:textColor="@color/skyBlue"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:id="@+id/calenderRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/skyBlue"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/textOnly">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/prevWeekButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="5dp"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/arrow_left_drop_circle" />
+
+
+                    <GridLayout
+                        android:id="@+id/weeklyCalendarGrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:columnCount="7"
+                        android:orientation="horizontal">
+
+
+                        <!-- Add day labels -->
+                        <TextView
+                            android:id="@+id/day1"
+                            android:layout_width="38dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingVertical="5dp"
+                            android:text="Sun"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/day2"
+                            android:layout_width="38dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingVertical="5dp"
+                            android:text="Mon"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/day3"
+                            android:layout_width="38dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingVertical="5dp"
+                            android:text="Tue"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/day4"
+                            android:layout_width="38dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingVertical="5dp"
+                            android:text="Wed"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/day5"
+                            android:layout_width="38dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingVertical="5dp"
+                            android:text="Thu"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/day6"
+                            android:layout_width="38dp"
+                            android:layout_height="50dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingVertical="5dp"
+                            android:text="Fri"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/day7"
+                            android:layout_width="38dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingVertical="5dp"
+                            android:text="Sat"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <!-- &lt;!&ndash; Add date cells for the week &ndash;&gt;
+                         &lt;!&ndash; You can add date cells similarly with TextView elements for each day &ndash;&gt;
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="1"
+                             android:gravity="center"
+                             android:textSize="18sp"
+                             android:textColor="#000000"
+                             />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="2"
+                             android:gravity="center"
+                             android:textSize="18sp"
+                             android:textColor="#000000"
+                             />
+
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="3"
+                             android:gravity="center"
+                             android:textSize="18sp"
+                             android:textColor="#000000" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="4"
+                             android:gravity="center"
+                             android:textSize="18sp"
+                             android:textColor="#000000" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="5"
+                             android:gravity="center"
+                             android:textSize="18sp"
+                             android:textColor="#000000" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="6"
+                             android:gravity="center"
+                             android:textSize="18sp"
+                             android:textColor="#000000" />
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="7"
+                             android:gravity="center"
+                             android:textSize="18sp"
+                             android:textColor="#000000" />-->
+                    </GridLayout>
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/nextWeekButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/arrow_right_drop_circle" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/morningRl"
+                    android:layout_below="@id/calenderRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:background="#EFF4FF"
+                    android:layout_height="55dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/morningText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Morning"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/skyBlue"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/morning_icon" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/NoSlotsAvailableInMorning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_toEndOf="@id/morningText"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:text="No Slots Available"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupMorning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_toEndOf="@id/morningText"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:layout_marginEnd="5dp"
+                            android:textStyle="bold"
+                            android:text="8:45-9:00"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp" />
+
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="9:30-9:45"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="9:45-10:00"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+
+
+
+                    </RadioGroup>
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/afternoonRl"
+                    android:layout_below="@id/morningRl"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="55dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/afternoonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Afternoon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/skyBlue"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/afternoon_icon" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/NoSlotsAvailableInAfternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="43dp"
+                        android:layout_toEndOf="@id/afternoonText"
+                        android:fontFamily="@font/poppins"
+                        android:visibility="gone"
+                        android:includeFontPadding="false"
+                        android:text="No Slots Available"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupAfternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_toEndOf="@id/afternoonText"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="12:45-1:00"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="1:15-1:30"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="1:30-1:45"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+
+
+
+                    </RadioGroup>
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_below="@id/afternoonRl"
+                    android:layout_width="match_parent"
+                    android:background="#EFF4FF"
+                    android:layout_height="55dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/nightText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Night"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="25dp"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/skyBlue"
+                        android:textSize="12sp"
+                        app:drawableTopCompat="@drawable/night_icon" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/NoSlotsAvailableInNight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="58dp"
+                        android:layout_toEndOf="@id/nightText"
+                        android:fontFamily="@font/poppins"
+                        android:includeFontPadding="false"
+                        android:text="No Slots Available"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupNight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="18dp"
+                        android:layout_toEndOf="@id/nightText"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="7:45-8:00"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="8:00-8:15"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@android:color/transparent"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="8:15-8:30"
+                            android:textColor="@drawable/text_color"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</ScrollView>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientDetailsActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backButton"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/arrow_back" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/backButton"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Patient Details"
+        android:textColor="@color/skyBlue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"
+        app:srcCompat="@drawable/patient_details_image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="First Name :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/fNameText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Middle Name :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/midName"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/mNameText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstName"
+        android:layout_alignStart="@id/lastName"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Last Name :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/lastName"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/mNameText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/midName"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Email :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/emailText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mobileNoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Mobile No :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mobileNo"
+        android:layout_width="135dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/mobileNoText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="phone"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dobText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_alignStart="@id/dob"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Date Of Birth :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/dob"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/dobText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:drawableEnd="@drawable/calendar"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="date"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+    <!-- <com.google.android.material.textfield.TextInputLayout
+         android:id="@+id/emailLayout"
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="260dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/nameLayout"
+         android:layout_centerHorizontal="true"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="20dp"
+         app:boxStrokeColor="@color/upperBlue"
+         app:endIconMode="clear_text"
+         app:hintTextColor="@color/upperBlue">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/email"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="sans-serif-medium"
+             android:hint="Enter Email*"
+             android:inputType="textEmailAddress"
+             android:textColor="@color/upperBlue"
+             android:textColorHint="@color/white"
+             android:textSize="15sp"
+             android:textStyle="normal" />
+     </com.google.android.material.textfield.TextInputLayout>
+
+
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:id="@+id/dobLayout"
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="260dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/emailLayout"
+         android:layout_marginStart="20dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginEnd="20dp"
+         android:layout_centerHorizontal="true"
+         android:hint="Date Of Birth*"
+         app:boxStrokeColor="@color/upperBlue"
+         app:endIconContentDescription="Calender"
+         app:endIconMode="custom"
+         app:hintTextColor="@color/upperBlue">
+
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/dob"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="sans-serif-medium"
+             android:inputType="date"
+             android:maxLength="10"
+             android:textColor="@color/upperBlue" />
+     </com.google.android.material.textfield.TextInputLayout>
+
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:id="@+id/phoneLayout"
+         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+         android:layout_width="260dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/dobLayout"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="20dp"
+         app:boxStrokeColor="@color/upperBlue"
+         app:hintTextColor="@color/upperBlue">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/phoneNo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:fontFamily="sans-serif-medium"
+             android:hint="Phone No*"
+             android:inputType="phone"
+             android:maxLength="10"
+             android:textColor="@color/upperBlue"
+             android:textSize="15sp" />
+     </com.google.android.material.textfield.TextInputLayout>
+-->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/genderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Gender :"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/mobileNo"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/genderText"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="2dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="Male"
+            android:textStyle="bold"
+            android:textColor="@drawable/text_color"
+            android:textSize="12sp" />
+
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="2dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:text="Female"
+            android:textColor="@drawable/text_color"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proceed"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/box"
+        android:elevation="30dp"
+        android:fontFamily="@font/poppins"
+        android:text="Proceed"
+        android:includeFontPadding="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/radioGroup"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

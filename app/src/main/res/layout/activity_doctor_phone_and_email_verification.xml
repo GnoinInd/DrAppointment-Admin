@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doctor_perspective.DoctorPhoneAndEmailVerificationActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backButton"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:srcCompat="@drawable/arrow_back" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/backButton"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Verify Mobile Number"
+        android:textColor="@color/skyBlue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp"
+        app:srcCompat="@drawable/doctor_verification_image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/mobileNoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Mobile Number"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@id/mobileNoText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:maxLength="10"
+        android:includeFontPadding="false"
+        android:inputType="phone"
+        android:paddingHorizontal="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/contactTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNo"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Contact Type"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/contactType"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@id/contactTypeText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="text"
+        android:paddingHorizontal="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactType"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Email ID"
+        android:textColor="@color/skyBlue"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailID"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@id/emailText"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="12dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="15sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendOTPButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/emailID"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/box"
+        android:elevation="30dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="Send OTP"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
